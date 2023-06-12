@@ -1,4 +1,4 @@
-import valid_anagram.LeetSolution;
+import group_anagrams.LeetSolution;
 import interfaces.Solution;
 
 public class Main {

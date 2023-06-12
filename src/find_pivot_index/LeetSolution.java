@@ -1,6 +1,8 @@
 package find_pivot_index;
 
-public class Solution {
+import interfaces.Solution;
+
+public class LeetSolution implements Solution {
     public int pivotIndex(int []nums) {
         int pivot = -1;
 
@@ -24,5 +26,10 @@ public class Solution {
             }
         }
         return pivot;
+    }
+
+    @Override
+    public void Solve() {
+        System.out.println(pivotIndex(new int[]{1,2,3,4}));
     }
 }
