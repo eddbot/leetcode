@@ -1,4 +1,4 @@
-import group_anagrams.LeetSolution;
+import product_of_array_except_self.LeetSolution;
 import interfaces.Solution;
 
 public class Main {
