@@ -21,30 +21,24 @@ public class LeetSolution implements Solution {
 
     public int[] productExceptSelf(int[] nums) {
 
-
         for(int i = 0; i< nums.length; i++){
             numberLogger.put(i,nums[i]);
         }
 
         for(int i =0; i< nums.length; i++){
             final var x =  i;
-            var hello = numberLogger.keySet()
+             nums[i] = numberLogger.keySet()
                     .stream()
                     .filter(n -> n != x)
                     .map(numberLogger::get)
                     .reduce((a,v) -> a * v)
                     .orElseThrow();
-            nums[i] = hello;
         }
-
         return nums;
-
     }
+
     @Override
     public void Solve() {
         System.out.println(Arrays.toString(productExceptSelf(new int[]{1,2,3,4})));
     }
-
-
-
 }
